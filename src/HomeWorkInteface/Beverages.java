@@ -19,6 +19,10 @@ public class Beverages extends Food implements Edible {
 
     }
 
+    public Beverages(String name, double weight, double price, double calories) {
+        super(name, weight, price, calories);
+    }
+
     @Override
     public double getCalories() {
         return 0;

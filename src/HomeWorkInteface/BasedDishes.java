@@ -14,6 +14,10 @@ public class BasedDishes extends Food implements Edible {
 
     }
 
+    public BasedDishes(String name, double weight, double price, double calories) {
+        super(name, weight, price, calories);
+    }
+
     @Override
     public int getFlavour() {
         return 0;

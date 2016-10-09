@@ -7,9 +7,22 @@ import java.util.ArrayList;
  */
 public class Menu {
 
-    ArrayList<Food> list = new ArrayList<Food>();
+    ArrayList<Food> menu = new ArrayList<Food>();
 
-    public void setToMenu(Food food){
-        list.add(food);
+    public void setToMenu(Food food) {
+        menu.add(food);
     }
+
+    public void getInfo() {
+        for (int i = 0; i < this.getSize(); i++) {
+            System.out.print(i + 1 + ".");
+            menu.get(i).getInfo();
+            System.out.println("\n");
+        }
+    }
+
+    public int getSize() {
+        return menu.size();
+    }
+
 }

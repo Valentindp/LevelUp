@@ -19,6 +19,10 @@ public class Soups extends Food implements Edible {
 
     }
 
+    public Soups(String name, double weight, double price, double calories) {
+        super(name, weight, price, calories);
+    }
+
     @Override
     public double getCalories() {
         return 0;

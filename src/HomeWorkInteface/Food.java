@@ -6,7 +6,7 @@ import lesson03.StringOperations;
  * Created by Валентин on 08.10.2016.
  */
 abstract class Food implements Edible {
-    int weight;
+    double weight;
     boolean salty;
     boolean bitter;
     boolean sweet;
@@ -18,7 +18,7 @@ abstract class Food implements Edible {
     }
 
 
-    public Food(int weight, String name, double price, double calories) {
+    public Food(String name, double weight, double price, double calories) {
         this.weight = weight;
         this.name = name;
         this.price = price;
@@ -33,4 +33,10 @@ abstract class Food implements Edible {
     abstract int getWeight();
 
     abstract void setWeight(int weight);
+
+    public void getInfo() {
+        System.out.println("Name - " + name + "\nWeight - " + weight + "\nCalories - " + calories + "\nPrice - " + price);
+    }
+
+    ;
 }
