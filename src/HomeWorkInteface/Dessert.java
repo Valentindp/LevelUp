@@ -6,8 +6,8 @@ package HomeWorkInteface;
 public class Dessert extends Food implements Edible {
 
     @Override
-    public int getFlavour() {
-        return 0;
+    public Flavour getFlavour() {
+        return Flavour.SWEET;
     }
 
     public Dessert(String name, double weight, double price, double calories) {
@@ -15,7 +15,6 @@ public class Dessert extends Food implements Edible {
     }
 
     @Override
-
     public double getCalories() {
         return 0;
     }

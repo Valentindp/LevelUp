@@ -5,8 +5,8 @@ package HomeWorkInteface;
  */
 public class Beverages extends Food implements Edible {
     @Override
-    public int getFlavour() {
-        return 0;
+    public Flavour getFlavour() {
+        return Flavour.BITTER;
     }
 
     @Override

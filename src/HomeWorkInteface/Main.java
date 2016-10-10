@@ -18,9 +18,19 @@ public class Main {
         menu.setToMenu(cake);
         menu.setToMenu(soup);
 
+        Flavour sweet = Flavour.SWEET;
+
+
+        System.out.println(Flavour.getFlavourByOrdinal(1).name());
+
+        for (Flavour fl: Flavour.values()) {
+          fl.printInfo();
+        }
+
+
 
 //        System.out.println(menu.getSize());
-        menu.getInfo();
+//        menu.getInfo();
 
 
     }
